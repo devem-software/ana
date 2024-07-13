@@ -1,0 +1,52 @@
+{
+    "general": {
+        "prefix": "G",
+        "range": "000-099",
+        "error": {}
+    },
+    "nodes": {
+        "prefix": "N",
+        "range": "100-199",
+        "error": {}
+    },
+    "bars": {
+        "prefix": "B",
+        "range": "200-299",
+        "error": {}
+    },
+    "loads": {
+        "prefix": "L",
+        "range": "300-399",
+        "error": {}
+    },
+    "displacements": {
+        "prefix": "D",
+        "range": "400-499",
+        "error": {}
+    },
+    "restrictions": {
+        "prefix": "R",
+        "range": "500-599",
+        "error": {}
+    },
+    "areas": {
+        "prefix": "A",
+        "range": "600-699",
+        "error": {}
+    },
+    "inertias": {
+        "prefix": "I",
+        "range": "700-799",
+        "error": {}
+    },
+    "centroids": {
+        "prefix": "C",
+        "range": "800-899",
+        "error": {}
+    },
+    "i18n": {
+        "prefix": "T",
+        "range": "900-999",
+        "error": {}
+    }
+}
