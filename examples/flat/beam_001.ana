@@ -1,0 +1,49 @@
+# Modelo de análisis
+#   Los modelos disponibles de análisis son:
+#   1. beam, para vigas
+#   2. truss, para armaduras
+#   3. frame, para porticos
+# Pronto los modelos:
+#   4. beam3d
+#   6. frame3d
+#   
+Model: beam
+# Sección a calcular
+Sections:
+    # Columna de base 0.30 y altura 0.30
+    c30x30:
+        type: rectangle
+        base: .3
+        height: .3
+    # Viga de base 0.30 y altura 0.40
+    v30x40:
+        type: rectangle
+        base: .3
+        height: .4
+Materials:
+    concrete:
+        E: 2e6  # Modulo de elasticidad
+        v: 2e-6 # Coeficiente de poisson
+        a: 1    # Coeficiente de expansion térmica
+# Nodos de la estructura
+Nodos:
+    n1: [0,0]
+    n2: [0,4]
+    n3: [0,7]
+    n4: [5.2,0]
+    n5: [5.2,4]
+    n6: [5.2,7]
+    n7: [7.8,4]
+    n8: [10.1,1.5]
+    n9: [10.1,4]
+# Barras de la estructura
+Bars:
+    b1: [n1,n2, c30x30, concrete]
+    b2: [n2,n3]
+    b3: [n2,n5]
+    b4: [n3,n6]
+    b5: [n4,n5]
+    b6: [n5,n6]
+    b7: [n5,n7]
+    b8: [n7,n9]
+    b9: [n8,n9]
