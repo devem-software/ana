@@ -10,4 +10,3 @@ from ana.core.Nodes import Nodes
 from ana.parse.Parse import LoadFile
 
 data = LoadFile(sys.argv[1]).toJson()
-print(data)

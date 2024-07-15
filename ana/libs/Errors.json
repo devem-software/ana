@@ -1,52 +1,78 @@
 {
+    "info": {
+        "G":"general",
+        "N": "nodes",
+        "B":"bars",
+        "L":"loads",
+        "D":"displacements",
+        "R":"restrictions",
+        "A": "areas",
+        "I":"inertias",
+        "C":"centroids",
+        "T":"i18n"
+    },
     "general": {
         "prefix": "G",
         "range": "000-099",
-        "error": {}
+        "errors": {
+            "G000":{
+                "msg":"Error no definido",
+                "help":""
+            }
+        }
     },
     "nodes": {
         "prefix": "N",
         "range": "100-199",
-        "error": {}
+        "errors": {
+            "N100": {
+                "msg":"Nodo no identificado",
+                "help": "Verifique la informacion del nodo"
+            },
+            "N101": {
+                "msg":"Nodo duplicado",
+                "help":"El identificador del nodo se encuentra duplicado"
+            }
+        }
     },
     "bars": {
         "prefix": "B",
         "range": "200-299",
-        "error": {}
+        "errors": {}
     },
     "loads": {
         "prefix": "L",
         "range": "300-399",
-        "error": {}
+        "errors": {}
     },
     "displacements": {
         "prefix": "D",
         "range": "400-499",
-        "error": {}
+        "errors": {}
     },
     "restrictions": {
         "prefix": "R",
         "range": "500-599",
-        "error": {}
+        "errors": {}
     },
     "areas": {
         "prefix": "A",
         "range": "600-699",
-        "error": {}
+        "errors": {}
     },
     "inertias": {
         "prefix": "I",
         "range": "700-799",
-        "error": {}
+        "errors": {}
     },
     "centroids": {
         "prefix": "C",
         "range": "800-899",
-        "error": {}
+        "errors": {}
     },
     "i18n": {
         "prefix": "T",
         "range": "900-999",
-        "error": {}
+        "errors": {}
     }
 }
